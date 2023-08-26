@@ -14,7 +14,7 @@ export class AppComponent {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.http.get('https://vercel-bff-teste-p36g4g1ks-matheusmurta.vercel.app/api/data').subscribe(
+    this.http.get('https://vercel-33sa1ailw-matheusmurta.vercel.app/api/data').subscribe(
       (data:any) => {
         // O próximo valor é emitido aqui
         this.responseData = data;
@@ -34,7 +34,7 @@ export class AppComponent {
       email: 'fast teste'
     };
 
-    this.http.post('https://vercel-bff-teste-p36g4g1ks-matheusmurta.vercel.app/api/postData', this.formData).subscribe(
+    this.http.post('https://vercel-33sa1ailw-matheusmurta.vercel.app/api/postData', this.formData).subscribe(
       (response) => {
         console.log('Resposta do servidor:', response);
       },
